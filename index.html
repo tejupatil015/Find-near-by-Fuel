@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Finder — India's Real-Time Fuel & Energy Station Discovery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- 
+        GOOGLE MAPS API KEY:
+        API key is configured: AIzaSyAnOh1-S6WOrMczl1TCNe20dDDvN24oNOE
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="nav-logo">
+            <span>⛽</span> FuelFinder
+        </a>
+        <input type="checkbox" class="hamburger-toggle" id="menuToggle">
+        <label for="menuToggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#fuel-selector">Find Fuel</a></li>
+            <li><a href="#map-section">Stations</a></li>
+            <li><a href="#booking-section">Book Gas</a></li>
+            <li><a href="#history-section">History</a></li>
+            <li><a href="#reviews-section">Reviews</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="btn-location" onclick="detectLocation()">
+                📍 Use My Location
+            </button>
+            <button class="theme-toggle" onclick="toggleTheme()" id="themeToggle" title="Toggle Theme">
+                <span id="themeToggleIcon">🌙</span>
+            </button>
+            <span class="region-pill">India 🇮🇳</span>
+
+            <!-- Settings Icon -->
+            <div class="settings-icon" onclick="toggleSettings()">
+                ⚙️
+            </div>

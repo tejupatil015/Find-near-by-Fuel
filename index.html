@@ -218,3 +218,39 @@
 
 
 
+
+
+                <button onclick="detectLocation()">📍 Use My Location</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: EV Station Detail (shown when EV tab is active) -->
+    <section class="ev-detail-section slide-up" id="ev-section" style="padding: 0 2rem; background: var(--bg-primary);">
+        <div class="ev-detail" id="evDetail">
+            <div class="ev-detail-title">
+                <span class="charging-bolt">⚡</span>
+                EV CHARGING DETAILS
+            </div>
+            <div class="plug-types" id="plugTypes">
+                <!-- Plug types will be dynamically inserted -->
+            </div>
+            <div class="slots-grid" id="slotsGrid">
+                <!-- Slots will be dynamically inserted -->
+            </div>
+            <div class="ev-info">
+                <div class="ev-info-item">
+                    <span class="ev-info-label">Slots Occupied</span>
+                    <span class="ev-info-value" id="slotsOccupied">5/12</span>
+                </div>
+                <div class="ev-info-item">
+                    <span class="ev-info-label">Charge Speed</span>
+                    <span class="ev-info-value" id="chargeSpeed">50 kW</span>
+                </div>
+                <div class="ev-info-item">
+                    <span class="ev-info-label">Est. Full Charge</span>
+                    <span class="ev-info-value" id="estCharge">~45 min (80%)</span>
+                </div>
+            </div>
+        </div>
+    </section>

@@ -170,3 +170,51 @@
             </button>
         </div>
     </section>
+
+    
+    <!-- Section 3: Map + Nearby Stations -->
+    <section class="map-section slide-up" id="map-section">
+        <div class="section-header">
+            <h2 class="section-title">Nearby Stations</h2>
+            <p class="section-subtitle">Find the best fuel stations near you</p>
+        </div>
+        <div class="kolhapur-summary">
+            <h3>Nearest Station in View</h3>
+            <p class="kolhapur-address">Select any point on the map or use your location to load stations across India.
+            </p>
+            <p class="kolhapur-distance">Live station details are shown from Google Places and the map updates as you
+                move or zoom.</p>
+        </div>
+        <div class="map-container">
+            <div class="map-wrapper slide-right" id="mapWrapper">
+                <div id="map"></div>
+            </div>
+            <div class="stations-panel">
+                <div class="stations-header">
+                    <span class="stations-count" id="stationsCount">📍 Showing stations near India</span>
+                    <span class="current-location" id="currentLocationLabel">Default Location: India</span>
+                    <button class="sort-btn" onclick="reSortByRating()">
+                        <span>↕</span> Sort by Rating
+                    </button>
+                </div>
+                <div class="station-info-panel" id="stationInfoPanel">
+                    <div class="station-info-title">Nearest Station Details</div>
+                    <div class="station-info-row"><span>Station:</span><strong>Indian Oil Petrol Pump</strong></div>
+                    <div class="station-info-row"><span>Address:</span><strong>Kasaba Bawada, Kolhapur, Maharashtra
+                            416001</strong></div>
+                    <div class="station-info-row"><span>Distance:</span><strong>1.2 km</strong></div>
+                    <div class="station-info-row"><span>Travel Time:</span><strong>6 min</strong></div>
+                    <div class="station-info-row"><span>Price:</span><strong>₹103.25 /L</strong></div>
+                    <div class="station-info-row"><span>Rating:</span><strong>4.5 ★</strong></div>
+                    <div class="station-info-snippet">"Clean and efficient"</div>
+                </div>
+                <div class="loader" id="loader">
+                    <div class="fuel-gauge"></div>
+                </div>
+                <div class="stations-grid slide-up" id="stationsGrid">
+                    <!-- Station cards will be dynamically inserted here -->
+                </div>
+
+
+
+

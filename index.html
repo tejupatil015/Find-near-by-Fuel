@@ -301,3 +301,52 @@
                     </div>
                     <button class="btn-book" style="margin-top: 2rem;" onclick="nextStep()">Continue</button>
                 </div>
+
+
+
+
+
+                
+                <!-- Step 2: Details Form -->
+                <div class="step-content" id="step2">
+                    <h3 style="font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; margin-bottom: 1.5rem;">Enter
+                        Your Details</h3>
+                    <form id="bookingForm">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" class="form-input" id="fullName" placeholder="Enter your name"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Mobile Number</label>
+                                <input type="tel" class="form-input" id="mobileNumber"
+                                    placeholder="10-digit mobile number" pattern="[0-9]{10}" required>
+                            </div>
+                            <div class="form-group full-width">
+                                <label class="form-label">Consumer ID</label>
+                                <input type="text" class="form-input" id="consumerId"
+                                    placeholder="Enter your consumer ID" required>
+                            </div>
+                            <div class="form-group full-width">
+                                <label class="form-label">Delivery Address</label>
+                                <input type="text" class="form-input" id="address"
+                                    placeholder="Enter complete delivery address" required>
+                            </div>
+                            <div class="form-group full-width">
+                                <label class="form-label">Cylinder Type</label>
+                                <div class="cylinder-options">
+                                    <div class="cylinder-option selected" data-type="14.2">
+                                        <div class="cylinder-weight">14.2 kg</div>
+                                        <div class="cylinder-type">Regular</div>
+                                    </div>
+                                    <div class="cylinder-option" data-type="5">
+                                        <div class="cylinder-weight">5 kg</div>
+                                        <div class="cylinder-type">Compact</div>
+                                    </div>
+                                    <div class="cylinder-option" data-type="19">
+                                        <div class="cylinder-weight">19 kg</div>
+                                        <div class="cylinder-type">Commercial</div>
+                                    </div>
+                                </div>
+                            </div>

@@ -350,3 +350,50 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="form-group full-width">
+                                <label class="form-label">Preferred Delivery Date</label>
+                                <input type="date" class="form-input" id="deliveryDate" required>
+                            </div>
+                            <div class="form-group full-width">
+                                <label class="form-label">Payment Method</label>
+                                <div class="payment-options">
+                                    <div class="payment-option selected" data-payment="online">
+                                        <div class="payment-icon">💳</div>
+                                        <div class="payment-name">Online Payment</div>
+                                    </div>
+                                    <div class="payment-option" data-payment="cod">
+                                        <div class="payment-icon">💵</div>
+                                        <div class="payment-name">Cash on Delivery</div>
+                                    </div>
+                                </div>
+                                <div class="payment-details" id="onlinePaymentDetails" style="display: block;">
+                                    <div class="payment-icons">
+                                        <div class="payment-icon-item">
+                                            <span class="icon">📱</span>
+                                            <span>UPI</span>
+                                        </div>
+                                        <div class="payment-icon-item">
+                                            <span class="icon">💳</span>
+                                            <span>Credit/Debit Card</span>
+                                        </div>
+                                        <div class="payment-icon-item">
+                                            <span class="icon">📱</span>
+                                            <span>Google Pay</span>
+                                        </div>
+                                        <div class="payment-icon-item">
+                                            <span class="icon">📱</span>
+                                            <span>PhonePe</span>
+                                        </div>
+                                        <div class="payment-icon-item">
+                                            <span class="icon">📱</span>
+                                            <span>Paytm</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn-book" style="margin-top: 1.5rem;"
+                            onclick="nextStep()">Continue</button>
+                    </form>
+                </div>

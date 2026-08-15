@@ -558,4 +558,15 @@
     <script src="script.js"></script>
 
 
-   
+    <script>
+        window.onload = function () {
+            if (localStorage.getItem("loggedIn") !== "true") {
+                window.location.replace("login.html");
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -397,3 +397,46 @@
                             onclick="nextStep()">Continue</button>
                     </form>
                 </div>
+
+                
+                <!-- Step 3: Confirmation -->
+                <div class="step-content" id="step3">
+                    <h3 style="font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; margin-bottom: 1.5rem;">Booking
+                        Summary</h3>
+                    <div class="summary-card">
+                        <div class="summary-title">Order Details</div>
+                        <div class="summary-row">
+                            <span class="summary-label">Provider</span>
+                            <span class="summary-value" id="summaryProvider">HP Gas</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="summary-label">Customer</span>
+                            <span class="summary-value" id="summaryName">-</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="summary-label">Mobile</span>
+                            <span class="summary-value" id="summaryMobile">-</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="summary-label">Consumer ID</span>
+                            <span class="summary-value" id="summaryConsumer">-</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="summary-label">Cylinder Type</span>
+                            <span class="summary-value" id="summaryCylinder">14.2 kg Regular</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="summary-label">Delivery Date</span>
+                            <span class="summary-value" id="summaryDate">-</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="summary-label">Delivery Address</span>
+                            <span class="summary-value" id="summaryAddress">-</span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="summary-label">Payment Method</span>
+                            <span class="summary-value" id="summaryPayment">Online Payment</span>
+                        </div>
+                    </div>
+                    <button class="btn-book" onclick="confirmBooking()">Confirm Booking</button>
+                </div>

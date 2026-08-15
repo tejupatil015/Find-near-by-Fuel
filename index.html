@@ -498,3 +498,38 @@
         </div>
     </section>
 
+
+    <!-- Chatbot -->
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-window" id="chatbotWindow">
+            <div class="chatbot-header">
+                <div class="chatbot-header-info">
+                    <div class="chatbot-avatar">🤖</div>
+                    <div>
+                        <div class="chatbot-title">Fuel Assistant</div>
+                        <div class="chatbot-status">Online</div>
+                    </div>
+                </div>
+                <button class="chatbot-close" onclick="toggleChatbot()">×</button>
+            </div>
+            <div class="chatbot-messages" id="chatbotMessages">
+                <div class="chatbot-message bot">
+                    <div class="message-content">
+                        Namaste! 🙏 I'm your Fuel Finder assistant. Ask me anything about fuel stations, prices, or how
+                        to use this app!
+                    </div>
+                    <div class="message-time">Just now</div>
+                </div>
+            </div>
+            <div class="chatbot-input-container">
+                <input type="text" class="chatbot-input" id="chatbotInput" placeholder="Type your message..."
+                    onkeypress="handleChatKeyPress(event)">
+                <button class="chatbot-send" onclick="sendChatMessage()">
+                    <span>➤</span>
+                </button>
+            </div>
+        </div>
+        <button class="chatbot-toggle" id="chatbotToggle" onclick="toggleChatbot()">
+            <span class="chatbot-icon">💬</span>
+        </button>
+    </div>

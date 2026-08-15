@@ -455,3 +455,46 @@
             </div>
         </div>
     </section>
+
+
+     <!-- Section 6: Reviews -->
+    <section class="reviews-section slide-up" id="reviews-section">
+        <div class="section-header">
+            <h2 class="section-title">Community Reviews</h2>
+            <p class="section-subtitle">See what others are saying about fuel stations</p>
+        </div>
+        <div class="reviews-container">
+            <div class="reviews-column slide-left">
+                <h3 class="column-header">Submit Your Review</h3>
+                <form class="review-form" id="reviewForm">
+                    <div class="star-rating" id="starRating">
+                        <span class="star" data-rating="1">★</span>
+                        <span class="star" data-rating="2">★</span>
+                        <span class="star" data-rating="3">★</span>
+                        <span class="star" data-rating="4">★</span>
+                        <span class="star" data-rating="5">★</span>
+                    </div>
+                    <input type="hidden" id="selectedRating" value="0">
+                    <select class="form-input" id="reviewFuelType">
+                        <option value="">Select Fuel Type</option>
+                        <option value="petrol">Petrol</option>
+                        <option value="diesel">Diesel</option>
+                        <option value="cng">CNG</option>
+                        <option value="lpg">LPG</option>
+                        <option value="ev">EV Charging</option>
+                        <option value="gas">Gas Cylinder</option>
+                    </select>
+                    <input type="text" class="form-input" id="reviewStation" placeholder="Station Name">
+                    <textarea class="form-input" id="reviewText" placeholder="Share your experience..."></textarea>
+                    <button type="submit" class="btn-submit-review">Submit Review</button>
+                </form>
+            </div>
+            <div class="reviews-column slide-right">
+                <h3 class="column-header">Recent Reviews</h3>
+                <div class="reviews-feed" id="reviewsFeed">
+                    <!-- Reviews will be dynamically inserted -->
+                </div>
+            </div>
+        </div>
+    </section>
+

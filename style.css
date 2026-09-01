@@ -1068,3 +1068,59 @@ select {
      font-size: 0.95rem;
      font-weight: 600;
  }
+
+ .stations-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .stations-count {
+     color: var(--text-secondary);
+     font-size: 0.95rem;
+ }
+
+ .current-location {
+     color: var(--text-secondary);
+     font-size: 0.95rem;
+     font-weight: 500;
+ }
+
+ .sort-btn {
+     display: flex;
+     align-items: center;
+     gap: 0.5rem;
+     padding: 0.5rem 1rem;
+     background: var(--bg-surface);
+     border: 1px solid var(--border-subtle);
+     border-radius: var(--radius-sm);
+     color: var(--text-secondary);
+     font-size: 0.85rem;
+     transition: all 0.3s ease;
+ }
+
+ .sort-btn:hover {
+     border-color: var(--amber);
+     color: var(--amber);
+ }
+
+ .stations-grid {
+     display: grid;
+     gap: 1.5rem;
+ }
+
+ .station-info-panel {
+     background: rgba(255, 255, 255, 0.06);
+     border: 1px solid rgba(255, 255, 255, 0.08);
+     border-radius: var(--radius-md);
+     padding: 1.25rem;
+     margin-bottom: 1.5rem;
+     color: var(--text-primary);
+ }
+
+ .station-info-title {
+     font-size: 1.1rem;
+     font-weight: 700;
+     margin-bottom: 0.85rem;
+     color: var(--amber);
+ }

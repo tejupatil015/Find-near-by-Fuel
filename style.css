@@ -981,3 +981,90 @@ select {
 .fuel-tab.active .pulse {
     display: block;
 }
+
+
+ @keyframes pulse {
+
+     0%,
+     100% {
+         transform: scale(1);
+         opacity: 1;
+     }
+
+     50% {
+         transform: scale(1.5);
+         opacity: 0.5;
+     }
+ }
+
+ /* Map Section */
+ .map-section {
+     padding: var(--section-padding) 2rem;
+     background: var(--bg-primary);
+ }
+
+ .map-container {
+     display: grid;
+     grid-template-columns: 45% 55%;
+     gap: 2rem;
+     max-width: var(--container-max);
+     margin: 0 auto;
+     align-items: start;
+ }
+
+ .map-wrapper {
+     position: sticky;
+     top: 100px;
+     height: 600px;
+     border-radius: var(--radius-lg);
+     overflow: hidden;
+     border: 1px solid var(--border-subtle);
+     transform: translateX(-100px);
+     opacity: 0;
+     transition: all 0.8s var(--transition-smooth);
+ }
+
+ .map-wrapper.visible {
+     transform: translateX(0);
+     opacity: 1;
+ }
+
+ #map {
+     width: 100%;
+     height: 100%;
+ }
+
+ .stations-panel {
+     display: flex;
+     flex-direction: column;
+     gap: 1.5rem;
+ }
+
+ .kolhapur-summary {
+     max-width: 1100px;
+     margin: 0 auto 1.75rem;
+     padding: 1.5rem 1.25rem;
+     background: rgba(255, 255, 255, 0.06);
+     border: 1px solid rgba(255, 255, 255, 0.08);
+     border-radius: var(--radius-lg);
+     text-align: center;
+     color: var(--text-primary);
+ }
+
+ .kolhapur-summary h3 {
+     font-size: 1.5rem;
+     margin-bottom: 0.5rem;
+     color: var(--amber);
+ }
+
+ .kolhapur-summary .kolhapur-address {
+     color: var(--text-secondary);
+     font-size: 1rem;
+     margin-bottom: 0.4rem;
+ }
+
+ .kolhapur-summary .kolhapur-distance {
+     color: var(--amber);
+     font-size: 0.95rem;
+     font-weight: 600;
+ }

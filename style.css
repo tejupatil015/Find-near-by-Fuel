@@ -910,74 +910,74 @@ select {
 }
 
 
- .fuel-tab {
-     display: flex;
-     align-items: center;
-     gap: 0.5rem;
-     padding: 1rem 1.5rem;
-     background: var(--bg-surface);
-     border: 1px solid var(--border-subtle);
-     border-radius: var(--radius-full);
-     color: var(--text-secondary);
-     font-weight: 600;
-     font-size: 0.95rem;
-     transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-     position: relative;
-     overflow: hidden;
- }
+.fuel-tab {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 1.5rem;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-full);
+    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    position: relative;
+    overflow: hidden;
+}
 
- .fuel-tab:hover {
-     color: var(--text-primary);
-     border-color: var(--tab-color, var(--amber));
-     transform: translateY(-2px) scale(1.05);
-     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
- }
+.fuel-tab:hover {
+    color: var(--text-primary);
+    border-color: var(--tab-color, var(--amber));
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
 
- .fuel-tab.active {
-     color: var(--bg-primary);
-     background: var(--tab-color, var(--amber));
-     border-color: var(--tab-color, var(--amber));
-     box-shadow: 0 0 30px color-mix(in srgb, var(--tab-color, var(--amber)) 40%, transparent);
-     transform: scale(1.05);
- }
+.fuel-tab.active {
+    color: var(--bg-primary);
+    background: var(--tab-color, var(--amber));
+    border-color: var(--tab-color, var(--amber));
+    box-shadow: 0 0 30px color-mix(in srgb, var(--tab-color, var(--amber)) 40%, transparent);
+    transform: scale(1.05);
+}
 
- .fuel-tab[data-fuel="petrol"] {
-     --tab-color: var(--petrol);
- }
+.fuel-tab[data-fuel="petrol"] {
+    --tab-color: var(--petrol);
+}
 
- .fuel-tab[data-fuel="diesel"] {
-     --tab-color: var(--diesel);
- }
+.fuel-tab[data-fuel="diesel"] {
+    --tab-color: var(--diesel);
+}
 
- .fuel-tab[data-fuel="cng"] {
-     --tab-color: var(--cng);
- }
+.fuel-tab[data-fuel="cng"] {
+    --tab-color: var(--cng);
+}
 
- .fuel-tab[data-fuel="lpg"] {
-     --tab-color: var(--lpg);
- }
+.fuel-tab[data-fuel="lpg"] {
+    --tab-color: var(--lpg);
+}
 
- .fuel-tab[data-fuel="ev"] {
-     --tab-color: var(--ev);
- }
+.fuel-tab[data-fuel="ev"] {
+    --tab-color: var(--ev);
+}
 
- .fuel-tab[data-fuel="gas"] {
-     --tab-color: var(--gas);
- }
+.fuel-tab[data-fuel="gas"] {
+    --tab-color: var(--gas);
+}
 
- .fuel-tab .icon {
-     font-size: 1.3rem;
- }
+.fuel-tab .icon {
+    font-size: 1.3rem;
+}
 
- .fuel-tab .pulse {
-     width: 8px;
-     height: 8px;
-     border-radius: 50%;
-     background: currentColor;
-     display: none;
-     animation: pulse 1.5s ease-in-out infinite;
- }
+.fuel-tab .pulse {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: currentColor;
+    display: none;
+    animation: pulse 1.5s ease-in-out infinite;
+}
 
- .fuel-tab.active .pulse {
-     display: block;
- }
+.fuel-tab.active .pulse {
+    display: block;
+}

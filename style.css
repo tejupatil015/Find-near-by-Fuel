@@ -1368,508 +1368,508 @@ select {
 
 
 
- .slot {
-     aspect-ratio: 1;
-     border-radius: 4px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     font-size: 0.7rem;
-     transition: all 0.3s var(--transition-smooth);
-     cursor: pointer;
- }
-
- .slot.empty {
-     background: rgba(0, 200, 83, 0.2);
-     color: var(--cng);
-     border: 1px solid rgba(0, 200, 83, 0.3);
- }
-
- .slot.occupied {
-     background: rgba(255, 45, 85, 0.2);
-     color: var(--crimson);
-     border: 1px solid rgba(255, 45, 85, 0.3);
- }
-
- .slot.finishing {
-     background: rgba(255, 107, 0, 0.2);
-     color: var(--amber);
-     border: 1px solid rgba(255, 107, 0, 0.3);
- }
-
- .slot:hover {
-     transform: scale(1.2);
-     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
- }
-
- .slot-info {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     margin-top: 0.75rem;
-     padding-top: 0.75rem;
-     border-top: 1px solid var(--border-subtle);
- }
-
- .charge-speed {
-     font-size: 0.8rem;
-     font-weight: 600;
-     color: var(--teal);
- }
-
- .est-time {
-     font-size: 0.75rem;
-     color: var(--text-muted);
- }
-
- .card-rating {
-     display: flex;
-     align-items: center;
-     gap: 0.5rem;
-     margin-bottom: 1rem;
- }
-
- .stars {
-     display: flex;
-     gap: 2px;
- }
-
- .star {
-     color: var(--text-muted);
- }
-
- .star.filled {
-     color: var(--amber);
- }
-
- .rating-number {
-     font-weight: 600;
-     font-size: 0.95rem;
- }
-
- .review-count {
-     color: var(--text-muted);
-     font-size: 0.85rem;
- }
-
- 
- .card-review {
-     font-style: italic;
-     color: var(--text-secondary);
-     font-size: 0.9rem;
-     padding-left: 1rem;
-     border-left: 2px solid var(--card-accent, var(--amber));
-     margin-bottom: 1rem;
- }
-
- .card-actions {
-     display: flex;
-     gap: 0.75rem;
- }
-
- .btn-navigate {
-     flex: 1;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     gap: 0.5rem;
-     padding: 0.8rem 1rem;
-     background: var(--card-accent, var(--amber));
-     color: var(--bg-primary);
-     border-radius: var(--radius-sm);
-     font-weight: 600;
-     font-size: 0.9rem;
-     transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
- }
-
- .btn-navigate:hover {
-     filter: brightness(1.15);
-     transform: translateY(-3px) scale(1.05);
-     box-shadow: 0 10px 30px rgba(255, 107, 0, 0.3);
- }
-
- .btn-navigate:active {
-     transform: translateY(-1px) scale(0.98);
- }
-
- .btn-google-maps {
-     flex: 1;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     gap: 0.5rem;
-     padding: 0.8rem 1rem;
-     background: rgba(255, 255, 255, 0.08);
-     color: var(--text-primary);
-     border: 1px solid rgba(255, 255, 255, 0.18);
-     border-radius: var(--radius-sm);
-     font-weight: 600;
-     font-size: 0.9rem;
-     transition: all 0.3s var(--transition-smooth);
- }
-
- .btn-google-maps:hover {
-     background: rgba(255, 255, 255, 0.14);
-     transform: translateY(-2px) scale(1.03);
-     box-shadow: 0 8px 24px rgba(255, 255, 255, 0.12);
- }
-
- .btn-google-maps:active {
-     transform: translateY(0) scale(0.98);
- }
-
- /* EV Detail Section */
- .ev-detail {
-     display: none;
-     margin-top: 1.5rem;
-     padding: 1.5rem;
-     background: var(--bg-surface);
-     border: 1px solid var(--ev);
-     border-radius: var(--radius-md);
- }
-
- .ev-detail.visible {
-     display: block;
- }
-
- .ev-detail-title {
-     font-family: 'Bebas Neue', sans-serif;
-     font-size: 1.3rem;
-     color: var(--ev);
-     margin-bottom: 1rem;
-     display: flex;
-     align-items: center;
-     gap: 0.5rem;
- }
-
- .plug-types {
-     display: flex;
-     flex-wrap: wrap;
-     gap: 0.75rem;
-     margin-bottom: 1.5rem;
- }
-
- .plug-type {
-     display: flex;
-     align-items: center;
-     gap: 0.4rem;
-     padding: 0.5rem 0.75rem;
-     background: var(--bg-secondary);
-     border-radius: var(--radius-sm);
-     font-size: 0.85rem;
- }
-
- .plug-type.available {
-     color: var(--cng);
- }
-
- .plug-type.unavailable {
-     color: var(--text-muted);
- }
-
- .slots-grid {
-     display: grid;
-     grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
-     gap: 0.5rem;
-     margin-bottom: 1rem;
- }
-
- .slot {
-     aspect-ratio: 1;
-     border-radius: 4px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     font-size: 0.7rem;
-     font-weight: 600;
- }
-
- .slot.empty {
-     background: rgba(0, 200, 83, 0.3);
-     color: var(--cng);
- }
-
- .slot.occupied {
-     background: rgba(255, 45, 85, 0.3);
-     color: var(--crimson);
- }
-
- .slot.finishing {
-     background: rgba(255, 107, 0, 0.3);
-     color: var(--amber);
- }
-
- .ev-info {
-     display: flex;
-     flex-wrap: wrap;
-     gap: 1.5rem;
- }
-
- .ev-info-item {
-     display: flex;
-     flex-direction: column;
- }
-
- .ev-info-label {
-     font-size: 0.75rem;
-     color: var(--text-muted);
-     text-transform: uppercase;
- }
-
- .ev-info-value {
-     font-weight: 600;
-     color: var(--ev);
- }
-
- .charging-bolt {
-     display: inline-block;
-     color: var(--amber);
-     animation: chargePulse 1s ease-in-out infinite;
- }
-
- @keyframes chargePulse {
-
-     0%,
-     100% {
-         opacity: 1;
-         transform: scale(1);
-     }
-
-     50% {
-         opacity: 0.6;
-         transform: scale(1.1);
-     }
- }
-
- /* Gas Booking Section */
- .booking-section {
-     padding: var(--section-padding) 2rem;
-     background: var(--bg-secondary);
-     opacity: 1;
-     transform: translateY(0);
-     transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
- }
-
- .booking-container {
-     max-width: 800px;
-     margin: 0 auto;
- }
-
- .booking-steps {
-     display: flex;
-     justify-content: center;
-     gap: 1rem;
-     margin-bottom: 3rem;
- }
-
- .step-indicator {
-     display: flex;
-     align-items: center;
-     gap: 0.5rem;
-     color: var(--text-muted);
-     font-size: 0.9rem;
- }
-
- .step-indicator.active {
-     color: var(--gas);
- }
-
- .step-indicator.completed {
-     color: var(--cng);
- }
-
- .step-number {
-     width: 32px;
-     height: 32px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     background: var(--bg-surface);
-     border: 2px solid var(--text-muted);
-     border-radius: 50%;
-     font-weight: 600;
-     font-size: 0.85rem;
- }
-
- .step-indicator.active .step-number {
-     background: var(--gas);
-     border-color: var(--gas);
-     color: var(--bg-primary);
- }
-
- .step-indicator.completed .step-number {
-     background: var(--cng);
-     border-color: var(--cng);
-     color: var(--bg-primary);
- }
-
- .step-divider {
-     width: 40px;
-     height: 2px;
-     background: var(--border-subtle);
- }
-
- .booking-card {
-     background: var(--bg-glass);
-     backdrop-filter: blur(10px);
-     border: 1px solid var(--border-subtle);
-     border-radius: var(--radius-lg);
-     padding: 2.5rem;
- }
-
- .step-content {
-     display: none;
- }
-
- .step-content.active {
-     display: block;
- }
-
- .provider-grid {
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     gap: 1rem;
- }
-
- .provider-option {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     gap: 0.75rem;
-     padding: 1.5rem;
-     background: var(--bg-surface);
-     border: 2px solid var(--border-subtle);
-     border-radius: var(--radius-md);
-     cursor: pointer;
-     transition: all 0.3s var(--transition-smooth);
- }
-
- .provider-option:hover {
-     border-color: var(--gas);
- }
-
- .provider-option.selected {
-     border-color: var(--gas);
-     background: rgba(255, 214, 0, 0.1);
- }
-
- .provider-logo {
-     width: 60px;
-     height: 60px;
-     border-radius: 50%;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     font-family: 'Bebas Neue', sans-serif;
-     font-size: 1.5rem;
-     color: var(--bg-primary);
- }
-
- .provider-name {
-     font-weight: 600;
-     text-align: center;
- }
-
- .form-grid {
-     display: grid;
-     grid-template-columns: repeat(2, 1fr);
-     gap: 1.25rem;
- }
-
- .form-group {
-     display: flex;
-     flex-direction: column;
-     gap: 0.5rem;
- }
-
- .form-group.full-width {
-     grid-column: span 2;
- }
-
- .form-label {
-     font-size: 0.85rem;
-     font-weight: 500;
-     color: var(--text-secondary);
- }
-
- .form-input {
-     padding: 0.9rem 1rem;
-     background: var(--bg-secondary);
-     border: 1px solid var(--border-subtle);
-     border-radius: var(--radius-sm);
-     color: var(--text-primary);
-     font-size: 1rem;
-     transition: all 0.3s ease;
- }
-
- .form-input:focus {
-     outline: none;
-     border-color: var(--gas);
-     box-shadow: 0 0 0 3px rgba(255, 214, 0, 0.15);
- }
-
- .cylinder-options {
-     display: flex;
-     gap: 0.75rem;
-     flex-wrap: wrap;
- }
-
- .cylinder-option {
-     flex: 1;
-     min-width: 120px;
-     padding: 1rem;
-     background: var(--bg-surface);
-     border: 2px solid var(--border-subtle);
-     border-radius: var(--radius-sm);
-     text-align: center;
-     cursor: pointer;
-     transition: all 0.3s ease;
- }
-
- .cylinder-option:hover {
-     border-color: var(--gas);
- }
-
- .cylinder-option.selected {
-     border-color: var(--gas);
-     background: rgba(255, 214, 0, 0.1);
- }
-
- .cylinder-weight {
-     font-family: 'Bebas Neue', sans-serif;
-     font-size: 1.5rem;
-     color: var(--gas);
- }
-
- .cylinder-type {
-     font-size: 0.8rem;
-     color: var(--text-secondary);
- }
-
- .payment-options {
-     display: flex;
-     gap: 0.75rem;
-     flex-wrap: wrap;
-     margin-bottom: 1rem;
- }
-
- .payment-option {
-     flex: 1;
-     min-width: 140px;
-     padding: 1rem;
-     background: var(--bg-surface);
-     border: 2px solid var(--border-subtle);
-     border-radius: var(--radius-sm);
-     text-align: center;
-     cursor: pointer;
-     transition: all 0.3s ease;
- }
-
- .payment-option:hover {
-     border-color: var(--gas);
- }
-
- .payment-option.selected {
-     border-color: var(--gas);
-     background: rgba(255, 214, 0, 0.1);
- }
+.slot {
+    aspect-ratio: 1;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    transition: all 0.3s var(--transition-smooth);
+    cursor: pointer;
+}
+
+.slot.empty {
+    background: rgba(0, 200, 83, 0.2);
+    color: var(--cng);
+    border: 1px solid rgba(0, 200, 83, 0.3);
+}
+
+.slot.occupied {
+    background: rgba(255, 45, 85, 0.2);
+    color: var(--crimson);
+    border: 1px solid rgba(255, 45, 85, 0.3);
+}
+
+.slot.finishing {
+    background: rgba(255, 107, 0, 0.2);
+    color: var(--amber);
+    border: 1px solid rgba(255, 107, 0, 0.3);
+}
+
+.slot:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.slot-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--border-subtle);
+}
+
+.charge-speed {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--teal);
+}
+
+.est-time {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.card-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.stars {
+    display: flex;
+    gap: 2px;
+}
+
+.star {
+    color: var(--text-muted);
+}
+
+.star.filled {
+    color: var(--amber);
+}
+
+.rating-number {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.review-count {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+
+.card-review {
+    font-style: italic;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--card-accent, var(--amber));
+    margin-bottom: 1rem;
+}
+
+.card-actions {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.btn-navigate {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1rem;
+    background: var(--card-accent, var(--amber));
+    color: var(--bg-primary);
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.btn-navigate:hover {
+    filter: brightness(1.15);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 30px rgba(255, 107, 0, 0.3);
+}
+
+.btn-navigate:active {
+    transform: translateY(-1px) scale(0.98);
+}
+
+.btn-google-maps {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1rem;
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-primary);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s var(--transition-smooth);
+}
+
+.btn-google-maps:hover {
+    background: rgba(255, 255, 255, 0.14);
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.12);
+}
+
+.btn-google-maps:active {
+    transform: translateY(0) scale(0.98);
+}
+
+/* EV Detail Section */
+.ev-detail {
+    display: none;
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background: var(--bg-surface);
+    border: 1px solid var(--ev);
+    border-radius: var(--radius-md);
+}
+
+.ev-detail.visible {
+    display: block;
+}
+
+.ev-detail-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3rem;
+    color: var(--ev);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.plug-types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.plug-type {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 0.75rem;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-sm);
+    font-size: 0.85rem;
+}
+
+.plug-type.available {
+    color: var(--cng);
+}
+
+.plug-type.unavailable {
+    color: var(--text-muted);
+}
+
+.slots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.slot {
+    aspect-ratio: 1;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.slot.empty {
+    background: rgba(0, 200, 83, 0.3);
+    color: var(--cng);
+}
+
+.slot.occupied {
+    background: rgba(255, 45, 85, 0.3);
+    color: var(--crimson);
+}
+
+.slot.finishing {
+    background: rgba(255, 107, 0, 0.3);
+    color: var(--amber);
+}
+
+.ev-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.ev-info-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.ev-info-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+.ev-info-value {
+    font-weight: 600;
+    color: var(--ev);
+}
+
+.charging-bolt {
+    display: inline-block;
+    color: var(--amber);
+    animation: chargePulse 1s ease-in-out infinite;
+}
+
+@keyframes chargePulse {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.6;
+        transform: scale(1.1);
+    }
+}
+
+/* Gas Booking Section */
+.booking-section {
+    padding: var(--section-padding) 2rem;
+    background: var(--bg-secondary);
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.booking-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.booking-steps {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.step-indicator {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.step-indicator.active {
+    color: var(--gas);
+}
+
+.step-indicator.completed {
+    color: var(--cng);
+}
+
+.step-number {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-surface);
+    border: 2px solid var(--text-muted);
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.step-indicator.active .step-number {
+    background: var(--gas);
+    border-color: var(--gas);
+    color: var(--bg-primary);
+}
+
+.step-indicator.completed .step-number {
+    background: var(--cng);
+    border-color: var(--cng);
+    color: var(--bg-primary);
+}
+
+.step-divider {
+    width: 40px;
+    height: 2px;
+    background: var(--border-subtle);
+}
+
+.booking-card {
+    background: var(--bg-glass);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+}
+
+.step-content {
+    display: none;
+}
+
+.step-content.active {
+    display: block;
+}
+
+.provider-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.provider-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.5rem;
+    background: var(--bg-surface);
+    border: 2px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all 0.3s var(--transition-smooth);
+}
+
+.provider-option:hover {
+    border-color: var(--gas);
+}
+
+.provider-option.selected {
+    border-color: var(--gas);
+    background: rgba(255, 214, 0, 0.1);
+}
+
+.provider-logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    color: var(--bg-primary);
+}
+
+.provider-name {
+    font-weight: 600;
+    text-align: center;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group.full-width {
+    grid-column: span 2;
+}
+
+.form-label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.form-input {
+    padding: 0.9rem 1rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+    color: var(--text-primary);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--gas);
+    box-shadow: 0 0 0 3px rgba(255, 214, 0, 0.15);
+}
+
+.cylinder-options {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.cylinder-option {
+    flex: 1;
+    min-width: 120px;
+    padding: 1rem;
+    background: var(--bg-surface);
+    border: 2px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cylinder-option:hover {
+    border-color: var(--gas);
+}
+
+.cylinder-option.selected {
+    border-color: var(--gas);
+    background: rgba(255, 214, 0, 0.1);
+}
+
+.cylinder-weight {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    color: var(--gas);
+}
+
+.cylinder-type {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.payment-options {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.payment-option {
+    flex: 1;
+    min-width: 140px;
+    padding: 1rem;
+    background: var(--bg-surface);
+    border: 2px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.payment-option:hover {
+    border-color: var(--gas);
+}
+
+.payment-option.selected {
+    border-color: var(--gas);
+    background: rgba(255, 214, 0, 0.1);
+}

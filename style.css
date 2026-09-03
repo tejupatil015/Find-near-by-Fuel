@@ -1124,3 +1124,142 @@ select {
      margin-bottom: 0.85rem;
      color: var(--amber);
  }
+
+ .station-info-row {
+     display: flex;
+     justify-content: space-between;
+     gap: 0.75rem;
+     margin-bottom: 0.65rem;
+     font-size: 0.95rem;
+     color: var(--text-secondary);
+ }
+
+ .station-info-row strong {
+     color: var(--text-primary);
+     font-weight: 600;
+ }
+
+ .station-info-snippet {
+     margin-top: 0.85rem;
+     color: var(--text-secondary);
+     font-size: 0.95rem;
+ }
+
+ .station-info-actions {
+     display: flex;
+     gap: 0.75rem;
+     margin-top: 1rem;
+ }
+
+ .station-info-action {
+     flex: 1;
+     padding: 0.85rem 1rem;
+     border-radius: var(--radius-sm);
+     background: rgba(255, 107, 0, 0.1);
+     color: var(--amber);
+     font-weight: 600;
+     text-align: center;
+     transition: all 0.3s ease;
+ }
+
+ .station-info-action:hover {
+     background: var(--amber);
+     color: var(--bg-primary);
+     transform: translateY(-1px);
+ }
+
+ .station-card {
+     background: var(--bg-glass);
+     border: 1px solid var(--border-subtle);
+     border-radius: var(--radius-md);
+     padding: 1.5rem;
+     transition: all 0.4s var(--transition-smooth);
+     opacity: 0;
+     transform: translateY(30px);
+     cursor: pointer;
+ }
+
+ .station-card.visible {
+     opacity: 1;
+     transform: translateY(0);
+ }
+
+ .station-card:hover,
+ .station-card.highlighted {
+     transform: translateY(-8px);
+     border-color: var(--card-accent, var(--amber));
+     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3),
+         0 0 30px color-mix(in srgb, var(--card-accent, var(--amber)) 20%, transparent);
+ }
+
+ .station-card[data-fuel="petrol"] {
+     --card-accent: var(--petrol);
+ }
+
+ .station-card[data-fuel="diesel"] {
+     --card-accent: var(--diesel);
+ }
+
+ .station-card[data-fuel="cng"] {
+     --card-accent: var(--cng);
+ }
+
+ .station-card[data-fuel="lpg"] {
+     --card-accent: var(--lpg);
+ }
+
+ .station-card[data-fuel="ev"] {
+     --card-accent: var(--ev);
+ }
+
+ .station-card[data-fuel="gas"] {
+     --card-accent: var(--gas);
+ }
+
+ .card-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+     margin-bottom: 1rem;
+ }
+
+ .card-title-row {
+     display: flex;
+     align-items: center;
+     gap: 0.75rem;
+ }
+
+ .station-rank {
+     width: 28px;
+     height: 28px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: var(--card-accent, var(--amber));
+     color: var(--bg-primary);
+     font-family: 'Bebas Neue', sans-serif;
+     font-size: 0.9rem;
+     border-radius: 50%;
+ }
+
+ .station-name {
+     font-family: 'Bebas Neue', sans-serif;
+     font-size: 1.4rem;
+     line-height: 1.2;
+ }
+
+ .station-address {
+     font-size: 0.85rem;
+     color: var(--text-secondary);
+     margin-top: 0.25rem;
+ }
+
+ .open-badge {
+     padding: 0.25rem 0.75rem;
+     background: rgba(0, 200, 83, 0.15);
+     border: 1px solid var(--cng);
+     border-radius: var(--radius-full);
+     color: var(--cng);
+     font-size: 0.75rem;
+     font-weight: 600;
+ }

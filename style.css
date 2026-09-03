@@ -1873,3 +1873,321 @@ select {
     border-color: var(--gas);
     background: rgba(255, 214, 0, 0.1);
 }
+
+
+ .payment-icon {
+     font-size: 1.5rem;
+     margin-bottom: 0.5rem;
+ }
+
+ .payment-name {
+     font-size: 0.9rem;
+     color: var(--text-primary);
+ }
+
+ .payment-details {
+     margin-top: 1rem;
+     padding: 1rem;
+     background: var(--bg-surface);
+     border-radius: var(--radius-sm);
+     border: 1px solid var(--border-subtle);
+ }
+
+ .payment-icons {
+     display: flex;
+     gap: 1rem;
+     flex-wrap: wrap;
+     justify-content: center;
+ }
+
+ .payment-icon-item {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 0.25rem;
+     padding: 0.5rem;
+     background: var(--bg-primary);
+     border-radius: var(--radius-xs);
+     border: 1px solid var(--border-subtle);
+     min-width: 80px;
+ }
+
+ .payment-icon-item .icon {
+     font-size: 1.2rem;
+ }
+
+ .payment-icon-item span:last-child {
+     font-size: 0.7rem;
+     color: var(--text-secondary);
+     text-align: center;
+ }
+
+ .summary-card {
+     background: var(--bg-surface);
+     border-radius: var(--radius-md);
+     padding: 1.5rem;
+     margin-bottom: 1.5rem;
+ }
+
+ .summary-title {
+     font-family: 'Bebas Neue', sans-serif;
+     font-size: 1.3rem;
+     margin-bottom: 1rem;
+     color: var(--gas);
+ }
+
+ .summary-row {
+     display: flex;
+     justify-content: space-between;
+     padding: 0.5rem 0;
+     border-bottom: 1px solid var(--border-subtle);
+ }
+
+ .summary-row:last-child {
+     border-bottom: none;
+ }
+
+ .summary-label {
+     color: var(--text-secondary);
+ }
+
+ .summary-value {
+     font-weight: 600;
+ }
+
+ .btn-book {
+     width: 100%;
+     padding: 1.2rem;
+     background: linear-gradient(135deg, var(--gas), #ffca28);
+     color: var(--bg-primary);
+     border-radius: var(--radius-md);
+     font-size: 1.1rem;
+     font-weight: 700;
+     text-transform: uppercase;
+     letter-spacing: 0.1em;
+     transition: all 0.4s var(--transition-smooth);
+     position: relative;
+     overflow: hidden;
+ }
+
+ .btn-book::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: -100%;
+     width: 100%;
+     height: 100%;
+     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+     transition: left 0.5s;
+ }
+
+ .btn-book:hover {
+     transform: translateY(-3px) scale(1.02);
+     box-shadow: 0 15px 40px rgba(255, 214, 0, 0.4);
+ }
+
+ .btn-book:hover::before {
+     left: 100%;
+ }
+
+ .btn-book:active {
+     transform: translateY(-1px) scale(0.98);
+ }
+
+ .booking-success {
+     display: none;
+     text-align: center;
+     padding: 3rem 2rem;
+     background: linear-gradient(135deg, rgba(0, 200, 83, 0.1), rgba(255, 107, 0, 0.1));
+     border: 1px solid rgba(0, 200, 83, 0.3);
+     border-radius: var(--radius-lg);
+     position: relative;
+     overflow: hidden;
+ }
+
+ .booking-success::before {
+     content: '';
+     position: absolute;
+     top: -50%;
+     left: -50%;
+     width: 200%;
+     height: 200%;
+     background: linear-gradient(45deg, transparent, rgba(0, 200, 83, 0.1), transparent);
+     animation: successGlow 3s ease-in-out infinite;
+ }
+
+ .booking-success.visible {
+     display: block;
+     animation: successSlideIn 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+ }
+
+ @keyframes successSlideIn {
+     from {
+         opacity: 0;
+         transform: translateY(30px) scale(0.9);
+     }
+
+     to {
+         opacity: 1;
+         transform: translateY(0) scale(1);
+     }
+ }
+
+ @keyframes successGlow {
+
+     0%,
+     100% {
+         transform: rotate(0deg) scale(1);
+     }
+
+     50% {
+         transform: rotate(180deg) scale(1.1);
+     }
+ }
+
+ .success-icon {
+     width: 80px;
+     height: 80px;
+     margin: 0 auto 1.5rem;
+     background: linear-gradient(135deg, var(--cng), rgba(0, 200, 83, 0.8));
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     animation: successPop 0.5s var(--transition-bounce), pulse 2s ease-in-out infinite 0.5s;
+     box-shadow: 0 0 30px rgba(0, 200, 83, 0.4);
+ }
+
+ @keyframes successPop {
+     0% {
+         transform: scale(0);
+     }
+
+     100% {
+         transform: scale(1);
+     }
+ }
+
+ .success-title {
+     font-family: 'Bebas Neue', sans-serif;
+     font-size: 2rem;
+     color: var(--cng);
+     margin-bottom: 0.5rem;
+ }
+
+ .success-message {
+     color: var(--text-secondary);
+     margin-bottom: 1rem;
+ }
+
+ .booking-ref {
+     font-family: 'Bebas Neue', sans-serif;
+     font-size: 1.5rem;
+     color: var(--gas);
+     margin-bottom: 2rem;
+ }
+
+ .btn-new-booking {
+     padding: 1rem 2rem;
+     background: var(--bg-surface);
+     border: 1px solid var(--gas);
+     color: var(--gas);
+     border-radius: var(--radius-full);
+     font-weight: 600;
+     transition: all 0.3s ease;
+ }
+
+ .btn-new-booking:hover {
+     background: var(--gas);
+     color: var(--bg-primary);
+ }
+
+ .success-actions {
+     display: flex;
+     gap: 1rem;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
+
+ .btn-view-history {
+     padding: 1rem 2rem;
+     background: var(--cng);
+     border: 1px solid var(--cng);
+     color: var(--bg-primary);
+     border-radius: var(--radius-full);
+     font-weight: 600;
+     transition: all 0.3s ease;
+ }
+
+ .btn-view-history:hover {
+     background: var(--cng-dark);
+     border-color: var(--cng-dark);
+ }
+
+ .confetti {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     pointer-events: none;
+     z-index: 10000;
+ }
+
+ .confetti-piece {
+     position: absolute;
+     width: 12px;
+     height: 12px;
+     border-radius: 2px;
+     animation: confettiFall 4s ease-out forwards, confettiSpin 4s ease-in-out infinite;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+ }
+
+ @keyframes confettiFall {
+     0% {
+         transform: translateY(-100vh) rotate(0deg) scale(1);
+         opacity: 1;
+     }
+
+     10% {
+         transform: translateY(-80vh) rotate(36deg) scale(1.1);
+         opacity: 1;
+     }
+
+     50% {
+         transform: translateY(-20vh) rotate(180deg) scale(0.9);
+         opacity: 0.8;
+     }
+
+     90% {
+         transform: translateY(80vh) rotate(324deg) scale(1.2);
+         opacity: 0.6;
+     }
+
+     100% {
+         transform: translateY(100vh) rotate(360deg) scale(0.8);
+         opacity: 0;
+     }
+ }
+
+ @keyframes confettiSpin {
+
+     0%,
+     100% {
+         transform: rotate(0deg);
+     }
+
+     25% {
+         transform: rotate(90deg);
+     }
+
+     50% {
+         transform: rotate(180deg);
+     }
+
+     75% {
+         transform: rotate(270deg);
+     }
+ }
+
+ /* Reviews Sec

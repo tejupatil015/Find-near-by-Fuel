@@ -1263,3 +1263,105 @@ select {
      font-size: 0.75rem;
      font-weight: 600;
  }
+
+
+ 
+ .closed-badge {
+     padding: 0.25rem 0.75rem;
+     background: rgba(255, 45, 85, 0.15);
+     border: 1px solid var(--crimson);
+     border-radius: var(--radius-full);
+     color: var(--crimson);
+     font-size: 0.75rem;
+     font-weight: 600;
+ }
+
+ .card-stats {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 1rem;
+     margin-bottom: 1rem;
+ }
+
+ .card-stat {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .card-stat-label {
+     font-size: 0.75rem;
+     color: var(--text-muted);
+     text-transform: uppercase;
+     letter-spacing: 0.05em;
+ }
+
+ .card-stat-value {
+     font-size: 1.1rem;
+     font-weight: 600;
+     color: var(--card-accent, var(--amber));
+ }
+
+ .capacity-bar {
+     height: 6px;
+     background: var(--bg-secondary);
+     border-radius: var(--radius-full);
+     overflow: hidden;
+     margin-bottom: 0.5rem;
+ }
+
+ .capacity-fill {
+     height: 100%;
+     border-radius: var(--radius-full);
+     transition: width 0.5s var(--transition-smooth);
+ }
+
+ .capacity-fill.high {
+     background: var(--crimson);
+ }
+
+ .capacity-fill.medium {
+     background: var(--amber);
+ }
+
+ .capacity-fill.low {
+     background: var(--cng);
+ }
+
+ .capacity-text {
+     font-size: 0.8rem;
+     color: var(--text-secondary);
+ }
+
+ /* EV/Parking Slots Styles */
+ .card-slots {
+     margin-bottom: 1rem;
+     padding: 1rem;
+     background: var(--bg-surface);
+     border-radius: var(--radius-sm);
+     border: 1px solid var(--border-subtle);
+ }
+
+ .slots-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 0.75rem;
+ }
+
+ .slots-title {
+     font-size: 0.85rem;
+     font-weight: 600;
+     color: var(--teal);
+ }
+
+ .slots-count {
+     font-size: 0.8rem;
+     color: var(--text-secondary);
+     font-weight: 500;
+ }
+
+ .slots-grid-mini {
+     display: grid;
+     grid-template-columns: repeat(8, 1fr);
+     gap: 0.4rem;
+ }

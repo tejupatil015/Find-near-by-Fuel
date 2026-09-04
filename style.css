@@ -2301,3 +2301,99 @@ select {
          transform: translateX(0);
      }
  }
+
+ 
+ .review-card[data-fuel="petrol"] {
+     --review-accent: var(--petrol);
+ }
+
+ .review-card[data-fuel="diesel"] {
+     --review-accent: var(--diesel);
+ }
+
+ .review-card[data-fuel="cng"] {
+     --review-accent: var(--cng);
+ }
+
+ .review-card[data-fuel="lpg"] {
+     --review-accent: var(--lpg);
+ }
+
+ .review-card[data-fuel="ev"] {
+     --review-accent: var(--ev);
+ }
+
+ .review-card[data-fuel="gas"] {
+     --review-accent: var(--gas);
+ }
+
+ .review-header {
+     display: flex;
+     align-items: center;
+     gap: 0.75rem;
+     margin-bottom: 0.75rem;
+ }
+
+ .reviewer-avatar {
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-weight: 600;
+     font-size: 0.9rem;
+     color: var(--bg-primary);
+ }
+
+ .reviewer-info {
+     flex: 1;
+ }
+
+ .reviewer-name {
+     font-weight: 600;
+     font-size: 0.95rem;
+ }
+
+ .review-meta {
+     display: flex;
+     align-items: center;
+     gap: 0.75rem;
+ }
+
+ .review-stars {
+     font-size: 0.85rem;
+ }
+
+ .fuel-badge {
+     padding: 0.2rem 0.5rem;
+     background: rgba(255, 107, 0, 0.15);
+     color: var(--amber);
+     border-radius: var(--radius-full);
+     font-size: 0.7rem;
+     font-weight: 600;
+     text-transform: uppercase;
+ }
+
+ .new-badge {
+     padding: 0.2rem 0.5rem;
+     background: var(--cng);
+     color: var(--bg-primary);
+     border-radius: var(--radius-full);
+     font-size: 0.65rem;
+     font-weight: 700;
+     animation: fadeOut 3s ease forwards;
+     animation-delay: 2s;
+ }
+
+ @keyframes fadeOut {
+     to {
+         opacity: 0;
+     }
+ }
+
+ .review-text {
+     font-size: 0.95rem;
+     color: var(--text-secondary);
+     line-height: 1.6;
+ }

@@ -2397,3 +2397,53 @@ select {
      color: var(--text-secondary);
      line-height: 1.6;
  }
+
+
+
+ /* Loading State */
+ .loader {
+     display: none;
+     align-items: center;
+     justify-content: center;
+     padding: 2rem;
+ }
+
+ .loader.visible {
+     display: flex;
+ }
+
+ .fuel-gauge {
+     width: 200px;
+     height: 8px;
+     background: var(--bg-secondary);
+     border-radius: var(--radius-full);
+     overflow: hidden;
+     position: relative;
+ }
+
+ .fuel-gauge::before {
+     content: '';
+     position: absolute;
+     left: 0;
+     top: 0;
+     height: 100%;
+     width: 0%;
+     background: linear-gradient(90deg, var(--amber), var(--amber));
+     border-radius: var(--radius-full);
+     animation: fuelFill 2s ease-in-out forwards;
+     box-shadow: 0 0 10px var(--amber);
+ }
+
+ @keyframes fuelFill {
+     0% {
+         width: 0%;
+     }
+
+     50% {
+         width: 70%;
+     }
+
+     100% {
+         width: 100%;
+     }
+ }

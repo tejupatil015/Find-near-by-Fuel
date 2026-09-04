@@ -2992,3 +2992,81 @@ input:checked+.toggle-slider:before {
     padding: 1.5rem;
     border: 1px solid var(--border-color);
 }
+
+
+
+.app-info {
+    margin-bottom: 2rem;
+}
+
+.app-version {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.app-description {
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.feature-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: var(--accent-bg);
+    border-radius: var(--radius-md);
+}
+
+.feature-icon {
+    font-size: 1.25rem;
+}
+
+.help-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.help-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--card-bg);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+}
+
+.help-icon {
+    font-size: 1.5rem;
+    background: var(--accent-bg);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.help-text {
+    flex: 1;
+}
+
+.help-title {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.help-description {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}

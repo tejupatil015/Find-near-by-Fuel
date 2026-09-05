@@ -123,3 +123,30 @@ const mockReviews = [
         time: "2 days ago"
     }
 ];
+
+
+
+// ============================================
+// GLOBAL STATE
+// ============================================
+const DEFAULT_LOCATION = { lat: 20.5937, lng: 78.9629, label: 'India' };
+let userLat = DEFAULT_LOCATION.lat;
+let userLng = DEFAULT_LOCATION.lng;
+let activeFuelType = 'petrol';
+let locationDetected = false;
+let map = null;
+let markers = [];
+let markersData = [];
+let selectedRating = 0;
+let bookingStep = 1;
+let selectedProvider = 'hp';
+let selectedCylinder = '14.2';
+let selectedPayment = 'online';
+let placesService = null;
+let currentStations = [];
+let currentPlaceInfoWindow = null;
+let placeSearchThrottle = null;
+// ============================================
+// GOOGLE MAPS INITIALIZATION
+// ============================================
+let userMarkers = []; // Track user location markers
